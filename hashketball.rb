@@ -311,7 +311,7 @@ def winning_team
       total_points_a[j]=away_player_path[j][:points]
         j +=1
     end
-    binding.pry
+    
     if total_points_a.sum>total_points_h.sum
       return game_hash[:away][:team_name]
     elsif total_points_a.sum<total_points_h.sum
